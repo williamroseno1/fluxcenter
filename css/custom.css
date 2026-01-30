@@ -1,0 +1,93 @@
+/* =========================
+   Variáveis de Identidade
+   ========================= */
+:root {
+    --blue-dark: #1F3A52;
+    --blue-medium: #3F5F7D;
+    --blue-light: #6F8FB3;
+    --blue-highlight: #9CC9E8;
+    --gray-medium: #9A9A9A;
+    --gray-dark: #1E1E1E;
+}
+
+/* =========================
+   Configurações Globais
+   ========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+#navbar {
+    -webkit-backdrop-filter: saturate(180%) blur(6px);
+    backdrop-filter: saturate(180%) blur(6px);
+}
+
+#navbar.scrolled {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   Hero
+   ========================= */
+#home h1 {
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#home h2 {
+    letter-spacing: 0.35em;
+}
+
+/* =========================
+   Botões
+   ========================= */
+.btn-primary {
+    background-color: var(--blue-medium);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Cards (Produtos / Serviços)
+   ========================= */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Formulários
+   ========================= */
+input,
+textarea {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--blue-medium);
+    box-shadow: 0 0 0 2px rgba(63, 95, 125, 0.25);
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer img {
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+}

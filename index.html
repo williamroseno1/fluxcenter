@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxcenter | Equipamentos Industriais</title>
+    <link rel="stylesheet" href="css/custom.css">    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/x-icon" href="img/logo/fluxcenter logo fundo branco.jpeg">
+</head>
+<body class="font-sans text-slate-800 bg-slate-50">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 bg-[#1F3A52]">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center">
+            <img 
+                src="img/logo/LOGO FLUX CENTER.png"
+                alt="Fluxcenter Equipamentos Industriais"
+                class="h-10 md:h-12 w-auto object-contain transition-all duration-300"
+            >
+        </a>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest text-gray-300">
+            <a href="#home" class="hover:text-white transition">Início</a>
+            <a href="#sobre" class="hover:text-white transition">Sobre</a>
+            <a href="#produtos" class="hover:text-white transition">Produtos</a>
+            <a href="#servicos" class="hover:text-white transition">Serviços</a>
+            <a href="#contato" class="hover:text-white transition">Contato</a>
+        </div>
+
+        <!-- CTA -->
+        <a href="#contato" class="hidden md:block bg-[#3F5F7D] text-white px-6 py-2 rounded-full font-bold text-sm uppercase transition hover:scale-105 shadow-lg">
+            Orçamento Rápido
+        </a>
+
+        <!-- Mobile Button -->
+        <button type="button" class="md:hidden text-white" onclick="toggleMenu()" title="Abrir menu" aria-label="Abrir menu de navegação">
+            <i data-lucide="menu" id="menu-icon" class="w-8 h-8"></i>
+        </button>
+
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[#1F3A52] opacity-90 z-10"></div>
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920" class="absolute inset-0 w-full h-full object-cover" alt="Indústria">
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h2 class="text-[#9CC9E8] font-bold uppercase tracking-[0.3em] text-sm mb-4">Soluções Pneumáticas em Serra - ES</h2>
+            <h1 class="text-4xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-2xl">Potência e Precisão para sua Indústria</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Especialistas em venda e manutenção de válvulas, cilindros e unidades hidráulicas. Garantimos o fluxo constante da sua produção.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#produtos" class="bg-[#3F5F7D] px-10 py-4 rounded font-bold text-lg hover:brightness-110 transition shadow-2xl flex items-center justify-center gap-2">
+                    Ver Produtos <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#servicos" class="border-2 border-white px-10 py-4 rounded font-bold text-lg hover:bg-white hover:text-gray-900 transition">Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#3F5F7D] rounded-full opacity-10"></div>
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000" class="relative z-10 rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="Equipe Fluxcenter">
+                <div class="absolute -bottom-6 -right-6 bg-[#1F3A52] text-white p-8 rounded-xl shadow-2xl z-20 hidden lg:block">
+                    <p class="font-bold text-3xl text-[#9CC9E8]">Fluxcenter</p>
+                    <p class="text-xs uppercase tracking-widest opacity-70">Referência em Serra - ES</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-8 text-[#1F3A52] border-l-8 border-[#3F5F7D] pl-6">Especialistas em Engenharia Industrial</h2>
+                <p class="text-gray-600 text-lg mb-6 leading-relaxed">Sediada estrategicamente no polo industrial da Serra, a Fluxcenter atua com excelência no fornecimento de componentes críticos para diversos setores industriais.</p>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">Nosso compromisso é com a produtividade do cliente. Por isso, oferecemos um serviço ágil de manutenção preventiva e um estoque local para pronta entrega.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="text-[#3F5F7D] w-6 h-6"></i>
+                        <span class="font-semibold text-slate-700">Equipe Certificada</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="text-[#3F5F7D] w-6 h-6"></i>
+                        <span class="font-semibold text-slate-700">Estoque Estratégico</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="text-[#3F5F7D] w-6 h-6"></i>
+                        <span class="font-semibold text-slate-700">Atendimento 24h</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="text-[#3F5F7D] w-6 h-6"></i>
+                        <span class="font-semibold text-slate-700">Garantia Técnica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-[#3F5F7D] font-bold uppercase tracking-[0.3em] text-sm">Catálogo</span>
+                <h2 class="text-4xl font-bold mt-4 text-[#1F3A52]">Nossos Equipamentos</h2>
+                <div class="w-20 h-1.5 bg-[#9CC9E8] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Produto 1 -->
+                <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border-b-4 border-transparent hover:border-[#9CC9E8]">
+                    <div class="bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="settings" class="text-[#3F5F7D] w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1F3A52]">Válvulas Hidráulicas</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Controle preciso de fluxo e pressão para sistemas industriais de alta complexidade.</p>
+                </div>
+                <!-- Produto 2 -->
+                <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border-b-4 border-transparent hover:border-[#9CC9E8]">
+                    <div class="bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="activity" class="text-[#3F5F7D] w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1F3A52]">Cilindros</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Atuadores pneumáticos e hidráulicos projetados para durabilidade extrema.</p>
+                </div>
+                <!-- Produto 3 -->
+                <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border-b-4 border-transparent hover:border-[#9CC9E8]">
+                    <div class="bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="droplet" class="text-[#3F5F7D] w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1F3A52]">Unidades Hidráulicas</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Centrais de força completas, montadas sob medida para sua necessidade específica.</p>
+                </div>
+                <!-- Produto 4 -->
+                <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border-b-4 border-transparent hover:border-[#9CC9E8]">
+                    <div class="bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="wrench" class="text-[#3F5F7D] w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1F3A52]">Bombas e Motores</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Componentes de alta performance para garantir a pressão ideal do sistema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços & Manutenção -->
+    <section id="servicos" class="py-24 px-6 bg-[#1E1E1E] text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#9CC9E8] rounded-full blur-[150px] opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <span class="text-[#9CC9E8] font-bold uppercase tracking-widest text-sm">Manutenção Especializada</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8 leading-tight">Não Deixe sua Produção Parar</h2>
+                
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 h-fit">
+                            <i data-lucide="wrench" class="text-[#9CC9E8] w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Revisão de Cilindros</h4>
+                            <p class="text-gray-400">Troca de vedações, brunimento e recuperação completa de atuadores.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 h-fit">
+                            <i data-lucide="activity" class="text-[#9CC9E8] w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Diagnóstico Preventivo</h4>
+                            <p class="text-gray-400">Análise de pressão e vazão para prever falhas antes que elas aconteçam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <a href="#contato" class="inline-flex items-center gap-3 bg-[#3F5F7D] text-white font-bold py-4 px-10 rounded-lg hover:scale-105 transition shadow-2xl">
+                        Agendar Visita Técnica <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <img src="https://images.unsplash.com/photo-1531297461137-818e91b3e805?auto=format&fit=crop&w=1200" class="w-full h-[500px] object-cover" alt="Manutenção">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-16">
+                <!-- Informações -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold mb-8 text-[#1F3A52]">Entre em Contato</h2>
+                    <p class="text-gray-600 mb-10">Solicite um orçamento ou tire suas dúvidas técnicas com a nossa equipe.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#3F5F7D] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Localização</h4>
+                                <p class="text-slate-500">Polo Industrial, Serra - ES</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="mail" class="text-[#3F5F7D] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Email</h4>
+                                <p class="text-slate-500">comercial@fluxcenter.com.br</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="phone" class="text-[#3F5F7D] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800">WhatsApp</h4>
+                                <p class="text-slate-500">(27) 99999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="lg:col-span-2 bg-slate-50 p-10 rounded-2xl shadow-sm border border-slate-200">
+                    <form action="#" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Nome Completo" class="w-full px-5 py-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-[#3F5F7D]">
+                            <input type="email" placeholder="Email Corporativo" class="w-full px-5 py-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-[#3F5F7D]">
+                        </div>
+                        <input type="text" placeholder="Empresa" class="w-full px-5 py-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-[#3F5F7D]">
+                        <textarea rows="4" placeholder="Descreva sua necessidade técnica..." class="w-full px-5 py-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-[#3F5F7D]"></textarea>
+                        <button type="submit" class="w-full bg-[#3F5F7D] text-white font-bold py-4 rounded-xl uppercase tracking-widest hover:brightness-110 shadow-lg">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E1E1E] text-white py-20 px-6">
+        
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex flex-col items-center mb-10">        
+                <div class="bg-white/5 p-4 rounded-2xl mb-6 border border-white/10">
+                    <i data-lucide="settings" class="w-10 h-10 text-[#9CC9E8]"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tighter uppercase">FLUXCENTER</span>
+                <span class="text-xs uppercase tracking-[0.4em] mt-2 opacity-50">Equipamentos Industriais</span>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="#" title="Instagram" aria-label="Visite nosso Instagram" class="hover:text-[#9CC9E8] transition"><i data-lucide="instagram"></i></a>
+                <a href="#" title="LinkedIn" aria-label="Visite nosso LinkedIn" class="hover:text-[#9CC9E8] transition"><i data-lucide="linkedin"></i></a>
+                <a href="#" title="Facebook" aria-label="Visite nosso Facebook" class="hover:text-[#9CC9E8] transition"><i data-lucide="facebook"></i></a>
+            </div>
+            
+            <p class="text-gray-500 text-sm">&copy; 2024 Fluxcenter Equipamentos Industriais. Todos os direitos reservados. Serra - ES.</p>
+        </div>
+    </footer>
+
+   <script>
+    // Inicializa os ícones Lucide
+    lucide.createIcons();
+
+    // Menu Mobile Toggle
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+
+    // Efeito de scroll na navbar
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-lg', 'py-2');
+            nav.classList.remove('py-4');
+            nav.style.backgroundColor = '#1F3A52';
+        } else {
+            nav.classList.remove('shadow-lg', 'py-2');
+            nav.classList.add('py-4');
+        }
+    });
+</script>
+
+<!-- Script externo separado corretamente -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
